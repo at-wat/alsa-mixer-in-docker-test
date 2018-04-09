@@ -1,0 +1,7 @@
+version: '2'
+services:
+  alsa-test:
+    image: alsa-test
+    build: .
+    devices:
+      - "/dev/snd:/dev/snd"
