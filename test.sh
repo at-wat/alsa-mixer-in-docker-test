@@ -8,6 +8,8 @@ ogg123 -r -d alsa -v /test.ogg &
 
 while true
 do
-  sleep 5
+  sleep 3
   ogg123 -d alsa -v /drip.ogg
+  sleep 3
+  aplay /alert.wav
 done
